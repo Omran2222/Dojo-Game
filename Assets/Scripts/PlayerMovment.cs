@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerMovment : MonoBehaviour
 {
-    public SoundManager Sm;
+   // public SoundManager Sm;
    
     [SerializeField] private float Speed;
     private Rigidbody RgB;
 
-    //private float Facing;
+    
 
 
     private void Start()
@@ -41,7 +41,7 @@ public class PlayerMovment : MonoBehaviour
            
             RgB.AddForce(transform.up * 300);
 
-            Sm.PlayPlayerJump();
+            //Sm.PlayPlayerJump();
         }
         
     }
